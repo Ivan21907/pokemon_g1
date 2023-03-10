@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entra el nom del pokemon"
+        android:textColorHint="@color/gray"
+        android:textSize="12dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:padding="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipus 1 pokemon"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <Spinner
+            android:id="@+id/sp_tipus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Tipus 1 pokemon"
+            android:textColorHint="@color/black"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:entries="@array/pokemonTypeSelect"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipus 2 pokemon"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <Spinner
+            android:id="@+id/sp_tipus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Tipus 1 pokemon"
+            android:textColorHint="@color/black"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:entries="@array/pokemonTypeSelect"/>
+    </LinearLayout>
+
+    <!--<EditText
+        android:id="@+id/et_type1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entra el tipus del pokemon 1"
+        android:textColorHint="@color/gray"
+        android:layout_marginTop="24dp"
+        android:textSize="12dp"
+        android:maxLines="1"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/et_typesecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entra el tipus del pokemon 2"
+        android:textColorHint="@color/gray"
+        android:layout_marginTop="24dp"
+        android:textSize="12dp"
+        android:maxLines="1"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:padding="12dp"/>-->
+
+    <EditText
+        android:id="@+id/et_generation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entra la generacio del pokemon"
+        android:textColorHint="@color/gray"
+        android:layout_marginTop="24dp"
+        android:textSize="12dp"
+        android:maxLines="1"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:padding="12dp"/>
+
+</LinearLayout>

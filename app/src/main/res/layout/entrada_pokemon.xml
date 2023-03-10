@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aqua"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Pokemon name"
+            android:textColorHint="@color/black"
+            android:ems="10"
+            android:textColor="@color/white"/>
+
+        <!--<EditText
+            android:id="@+id/et_tipus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Tipus 1 pokemon"
+            android:textColorHint="@color/black"
+            android:ems="10"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/et_tipus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Tipus 2 pokemon"
+            android:textColorHint="@color/black"
+            android:ems="10"
+            android:textColor="@color/white"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipus 1 pokemon"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/sp_tipus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Tipus 1 pokemon"
+                android:textColorHint="@color/black"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:entries="@array/pokemonTypeSelect"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipus 2 pokemon"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/sp_tipus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Tipus 1 pokemon"
+                android:textColorHint="@color/black"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:entries="@array/pokemonTypeSelect"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_generacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Generacio pokemon"
+            android:textColorHint="@color/black"
+            android:ems="10"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btn_afegir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:text="Afegir pokemon"/>
+
+        <Button
+            android:id="@+id/btn_menuPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:text="Tornar al menu"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
